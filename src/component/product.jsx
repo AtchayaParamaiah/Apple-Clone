@@ -3,69 +3,9 @@ import React from "react";
 import { BlueButton, OutlineButton } from "./button";
 
 const Product = () => {
-    const product = [
-        {
-            logo: [
-                <img
-                    className="md:hidden w-[200px] "
-                    src="https://web.archive.org/web/20261010031832im_/https://www.apple.com/v/homepage/images/logos/apple-watch-series-12/a/hero_logo_apple_watch_series_12__eze8r897c5me_small_2x.png"
-                    alt="Apple Watch"
-                />,
-                <img
-                    className="hidden md:block w-[400px]"
-                    src="https://web.archive.org/web/20261010031832im_/https://www.apple.com/v/homepage/images/logos/apple-watch-series-12/a/hero_logo_apple_watch_series_12__eze8r897c5me_small_2x.png"
-                    alt="Apple Watch"
-                />,
-            ],
-            name: "The most accurate heart rate sensing in a wearable",
-            img: [
-                <img
-                    className="md:hidden w-full h-[500px]"
-                    src="https://web.archive.org/web/20261010181154im_/https://www.apple.com/v/homepage/images/apple-watch-series-12/a/hero_apple_watch_series_12__n9rln7bzvwya_small.jpg"
-                    alt="Apple Watch"
-                />,
-                <img
-                    className="hidden md:block w-full h-[580px]"
-                    src="https://web.archive.org/web/20261010181154im_/https://www.apple.com/v/homepage/images/apple-watch-series-12/a/hero_apple_watch_series_12__n9rln7bzvwya_medium.jpg"
-                    alt="Apple Watch"
-                />,
-            ],
-        },
-
-    ];
-
+    
     const productExtra = [
-        {
-            logo: [
-                <img
-                    className=" w-[300px] "
-                    src="https://web.archive.org/web/20261010031815im_/https://www.apple.com/v/homepage/images/logos/apple-watch-ultra-4/a/promo_logo_apple_watch_ultra_4__bc6ish8cjaeq_small_2x.png"
-                    alt="Apple Watch"
-                />,
-                
-            ],
-            name: "A battery you can't outrun",
-            img: [
-                <img
-                    className=" w-full h-[500px]"
-                    src="https://web.archive.org/web/20261010031813im_/https://www.apple.com/v/homepage/images/apple-watch-ultra-4/a/promo_apple_watch_ultra_4__e4r3qertak2u_small_2x.jpg"
-                    alt="Apple Watch"
-                />,
-                
-            ],
-        },
-        {
-            logo: [<p className="text-5xl font-bold">MacBook Air</p>],
-            name: <p className="text-black">Now supercharged by M5.</p>,
-            img: [
-                <img
-                    className=" w-full h-[500px]"
-                    src="https://www.apple.com/v/homepage/images/macbook-air-m5/a/hero_macbook_air_m5__eb1idggd120y_large_2x.jpg"
-                    alt="Apple Watch"
-                />,
-                
-            ],
-        },
+        
         {
             logo: [<img
                     className=" w-[150px] "
@@ -143,34 +83,7 @@ const Product = () => {
         <section>
 
             {/* Upper Section */}
-            <div className=" w-screen mt-2">
-                {product.map((item, i) => (
-                    <div key={i} className="relative text-center">
-                        <div>
-                            {item.img.map((image, j) => (
-                                <div key={j}>{image}</div>
-                            ))}
-                        </div>
-                        <div className="absolute top-10 text-center flex justify-center  mx-auto w-[100%]">
-                            {item.logo.map((logo, j) => (
-                                <div className="text-center" key={j}>{logo}</div>
-                            ))}
-                        </div>
-                        <div className="absolute bottom-10 text-center  mx-auto w-[100%]">
-                            <p className="max-md:text-lg mt-3 text-2xl font-semibold text-white text-center w-[50%] mx-auto">{item.name}</p>
-
-                            <div className="mt-4 flex justify-center gap-3 ">
-                                <BlueButton>Learn more</BlueButton>
-                                <OutlineButton>Buy</OutlineButton>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-                ))}
-            </div>
+            
 
             {/* Lower section */}
             <div className="w-screen"> 
